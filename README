@@ -1,4 +1,40 @@
-Base App
+# WIP - Not ready for use.
+
+## Base App
+Built on top of Daniel Kehoe's excellent [Rails-Stripe-membership-SAAS repo](https://github.com/RailsApps/rails-stripe-membership-saas).  The options I selected using his Rails Composer are included at the end of this ReadMe. Please [check out his work](http://railsapps.github.io/) and consider supporting the effort!
+
+### Intro
+This repo serves as a launchpad for my heavier-duty Rails apps. It comes packaged with:
+* Devise roles + Omniauth(Facebook, Twitter, Gmail) for user authentication
+* Bootstrap 3 (primarily for Devise styling out of the box)
+* Stripe membership support
+* Mailchimp support
+* Heroku support
+* Postgres
+* Figaro for secrets
+
+*Note* I built this for my own use. Use at your own discretion, keeping in mind that almost all the work was done by Daniel Kehoe (thank you, thank you!).  Your best bet for starting with something similar is likeley to go [straight to the source](https://github.com/RailsApps/rails-stripe-membership-saas).
+
+### Setup
+1. Run `figaro install` to create your own dev/test application.yml secrets file.
+2. Add the following keys to the file:
+```
+admin_name: Benevolent Admin
+admin_email: admin@awesomeapp.com
+admin_password: password
+email_provider_username: your_user_name@gmail.com
+email_provider_password: ???
+domain_name: awesomeapp.com
+mailchimp_api_key:      see #3
+mailchimp_list_id:      see #3
+stripe_api_key:         see #3
+stripe_publishable_key: see #3
+secret_key_base:        see #3
+
+```
+3. Reference Daniel Kehoe's [Rails-Stripe-membership-SAAS repo](https://github.com/RailsApps/rails-stripe-membership-saas) (the basis for this repo, so much credit + gratitude to him) for details about personalizing these values for your app.
+
+## Rails Composer details
 ================
 
 Rails Composer, open source, supported by subscribers.
