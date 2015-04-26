@@ -1,4 +1,6 @@
 class CreatePlanService
+  include Serviceable
+
   def call
     p1 = Plan.where(name: 'Platinum').first_or_initialize do |p|
       p.amount = 2900
