@@ -13,7 +13,7 @@ This repo serves as a launchpad for my heavier-duty Rails apps. It comes package
 * Postgres
 * Figaro for secrets
 
-*Note* I built this for my own use. Use at your own discretion, keeping in mind that almost all the work was done by Daniel Kehoe (thank you, thank you!).  Your best bet for starting with something similar is likeley to go [straight to the source](https://github.com/RailsApps/rails-stripe-membership-saas).
+**Note** I built this for my personal use. Use at your own discretion, keeping in mind that almost all the work was done by Daniel Kehoe (thank you, thank you!).  Your best bet for starting with something similar is likely going [straight to the source](https://github.com/RailsApps/rails-stripe-membership-saas).
 
 ### Setup
 1. Run `figaro install` to create your own dev/test application.yml secrets file.
@@ -35,8 +35,7 @@ secret_key_base:        see #3
 3. Reference Daniel Kehoe's [Rails-Stripe-membership-SAAS repo](https://github.com/RailsApps/rails-stripe-membership-saas) (the basis for this repo, so much credit + gratitude to him) for details about personalizing these values for your app.
 
 ## Rails Composer details
-================
-
+```
 Rails Composer, open source, supported by subscribers.
 Please join RailsApps to support development of Rails Composer.
 Need help? Ask on Stack Overflow with the tag 'railsapps.'
@@ -97,3 +96,4 @@ option  Use 'pry' as console replacement during development and test?
 choose  Enter your selection: [false]
 option  Use or create a project-specific rvm gemset?
 choose  Enter your selection: [false]
+```
