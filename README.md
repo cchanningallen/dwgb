@@ -7,6 +7,7 @@ Built on top of Daniel Kehoe's excellent [Rails-Stripe-membership-SAAS repo](htt
 This repo serves as a launchpad for my heavier-duty Rails apps. It comes packaged with:
 * Devise roles + Omniauth(Facebook, Twitter, Gmail) for user authentication
 * Bootstrap 3 (primarily for Devise styling out of the box)
+* Bootswatches (set as Lumen, but [all of them](https://bootswatch.com/) are available using the [bootswatch-rails gem](https://github.com/maxim/bootswatch-rails))
 * Stripe membership support
 * Mailchimp support
 * Heroku support
